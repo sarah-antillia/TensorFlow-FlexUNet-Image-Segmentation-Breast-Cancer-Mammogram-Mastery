@@ -120,7 +120,7 @@ As shown above, the number of images of train and valid datasets is large enough
 
 <b>(1) Cropping Images </b><br>
  
- We generated a 512z512 pixels cropped PNG dataset from 1920x1080 pixels JPG images in <b>Cancer</b> folder.<br>
+ We generated a 512x512 pixels cropped PNG dataset from 1920x1080 pixels JPG images in <b>Cancer</b> folder.<br>
 <pre>
 ./Breast Cancer Dataset
 └─Original Dataset 
@@ -129,14 +129,14 @@ As shown above, the number of images of train and valid datasets is large enough
 </pre>
 
 <b>(2) Generation annotation dataset</b><br>
-Since the masks (annotations) data were not provided for the origial cancer images of the <b>Breast Cancer Dataset</b>, 
+Since the masks (annotations) data were not provided for the original cancer images of the <b>Breast Cancer Dataset</b>, 
 we generated our own PNG mask files correspong to the cropped PNG images by using 
 a pretrained model <a href="https://github.com/sarah-antillia/TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast">
 TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast</a> without a manual annotation by human experts</a>,
-because the INbreast cancer images appeared similiar to the images in <b>Cancer</b> subset of <b>Mammogram Mastery</b>.
+because the INbreast cancer images appeared similar to the images in <b>Cancer</b> subset of <b>Mammogram Mastery</b>.
 <br> <br>
-<b>(3) Offline Dataset Aumentation</b><br>
-To address the limited size of the cropped PNG images and their correspondings masks, 
+<b>(3) Offline Dataset Augmentation</b><br>
+To address the limited size of the cropped PNG images and their corresponding masks, 
 we used our offline augmentation tools 
 <a href="https://github.com/sarah-antillia/ImageMask-Dataset-Offline-Augmentation-Tool"> 
 ImageMask-Dataset-Offline-Augmentation-Tool</a> and 
