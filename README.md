@@ -27,7 +27,6 @@ In essence, your single-class segmentation model will operate with two categoriz
 As shown below, the inferred masks predicted by our segmentation model trained on the 
 PNG dataset appear similar to the ground truth masks,
 <br>
-<br>
 <table>
 <tr>
 <th>Input: image</th>
@@ -51,11 +50,9 @@ PNG dataset appear similar to the ground truth masks,
 </tr>
 </table>
 <hr>
-<br>
 <h3>1. Dataset Citation</h3>
 The dataset used was obtained from the web-site:<br><br>
 <b>Breast Cancer Dataset/Original Dataset/Cancer</b> in 
-
 <a href="https://data.mendeley.com/datasets/fvjhtskg93/1">
 <b>
 Mammogram Mastery: A Robust Dataset for Breast Cancer Detection and Medical Education
