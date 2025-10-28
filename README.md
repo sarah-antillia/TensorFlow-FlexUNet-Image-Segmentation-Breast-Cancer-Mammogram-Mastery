@@ -137,11 +137,10 @@ because the INbreast cancer images appeared similar to the images in <b>Cancer</
 <br> <br>
 <b>(3) Offline Dataset Augmentation</b><br>
 To address the limited size of the cropped PNG images and their corresponding masks, 
-we used our offline augmentation tools 
+we applied our offline augmentation tools 
 <a href="https://github.com/sarah-antillia/ImageMask-Dataset-Offline-Augmentation-Tool"> 
 ImageMask-Dataset-Offline-Augmentation-Tool</a> and 
 <a href="https://github.com/sarah-antillia/Barrel-Image-Distortion-Tool">Barrel-Image-Distortion-Tool</a>  
-
 to the cropped dataset. 
 <br>
 <br>
