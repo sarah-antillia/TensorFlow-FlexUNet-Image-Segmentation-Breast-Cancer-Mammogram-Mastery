@@ -123,7 +123,7 @@ As shown above, the number of images of train and valid datasets is large enough
 </pre>
 <b>(2) Annotation Generation</b><br>
 Since the masks (annotations) data were not provided for the original cancer images of the <b>Breast Cancer Dataset</b>, 
-we generated our own PNG mask files correspong to the cropped PNG images by using 
+we generated our own PNG mask files corresponding to the cropped PNG images by using 
 a pretrained model <a href="https://github.com/sarah-antillia/TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast">
 TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast</a> without a manual annotation by human experts</a>,
 because the INbreast cancer images appeared similar to the images in <b>Cancer</b> subset of <b>Mammogram Mastery</b>.
