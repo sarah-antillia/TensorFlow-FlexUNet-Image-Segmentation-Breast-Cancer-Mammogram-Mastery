@@ -24,7 +24,6 @@ In essence, your single-class segmentation model will operate with two categoriz
 <br>
 <hr>
 <b>Acutual Image Segmentation for 512x512 pixels Cancer images</b><br>
-
 As shown below, the inferred masks predicted by our segmentation model trained on the 
 PNG dataset appear similar to the ground truth masks,
 <br>
@@ -117,9 +116,7 @@ As shown above, the number of images of train and valid datasets is large enough
 <br>
 <br>
 <h4>2.2 ImageMask Dataset Derivation</h4>
-
-<b>(1) Cropping Images </b><br>
- 
+<b>(1) Cancer Image Cropping</b><br>
  We generated a 512x512 pixels cropped PNG dataset from 1920x1080 pixels JPG images in <b>Cancer</b> folder.<br>
 <pre>
 ./Breast Cancer Dataset
@@ -127,14 +124,13 @@ As shown above, the number of images of train and valid datasets is large enough
     ├─Cancer
     └─Non-Cancer
 </pre>
-
-<b>(2) Generation annotation dataset</b><br>
+<b>(2) Annotation Generation</b><br>
 Since the masks (annotations) data were not provided for the original cancer images of the <b>Breast Cancer Dataset</b>, 
 we generated our own PNG mask files correspong to the cropped PNG images by using 
 a pretrained model <a href="https://github.com/sarah-antillia/TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast">
 TensorFlow-FlexUNet-Image-Segmentation-Breast-Cancer-INbreast</a> without a manual annotation by human experts</a>,
 because the INbreast cancer images appeared similar to the images in <b>Cancer</b> subset of <b>Mammogram Mastery</b>.
-<br> <br>
+<br><br>
 <b>(3) Offline Dataset Augmentation</b><br>
 To address the limited size of the cropped PNG images and their corresponding masks, 
 we applied our offline augmentation tools 
